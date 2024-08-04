@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        
+        <h1 style="text-align: center;"> Image Gallery </h1>
+        <div class="full-img" id="fullImgBox">
+         <img src="images/img1.jpg" id="fullImg"> 
+         <span onclick="closeFullImg()">X</span> 
+        </div>
+
+        <div class="img-gallery">
+            <img src=" https://www.bing.com/th?id=OIP.4wRa81U9HUBh-h_b_WNz-QHaEo&w=202&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" onclick="openFullImg(this.src)">
+            <img src="https://th.bing.com/th?id=OSK.HEROGNBwoD-Ikgzxv6SuVpUyB2rOMvDtZXr1Y7vAyJ1oBfs&w=312&h=200&c=15&rs=2&o=6&dpr=1.3&pid=SANGAM" onclick="openFullImg(this.src)">
+            <img src="https://www.bing.com/th?id=OIP.Sc-ZDMjpcqOyquqBwC9K7wHaEK&w=157&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" onclick="openFullImg(this.src)">
+            <img src="https://www.bing.com/th?id=OIP.osSlqBP3y2P2HZ8OvE83tQHaHa&w=147&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" onclick="openFullImg(this.src)">
+            <img src="https://www.bing.com/th?id=OIP.IWtvQ9Kr4yjIxxC-YdmDWAHaE6&w=223&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" onclick="openFullImg(this.src)">
+            <img src="https://th.bing.com/th?id=OSK.942a1092e6fadc7caa6ce24ad8643328&w=80&h=80&c=7&o=6&dpr=1.3&pid=SANGAM" onclick="openFullImg(this.src)">
+            <img src="https://th.bing.com/th?id=OSK.ee9e09624663b49019b3999e0e501487&w=80&h=80&c=7&o=6&dpr=1.3&pid=SANGAM" onclick="openFullImg(this.src)">
+            <img src="https://th.bing.com/th/id/OIP.3e29W1U3pu3BtUsAFY2HeAHaEo?w=282&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" onclick="openFullImg(this.src)">
+            <img src="https://th.bing.com/th/id/OIP.kYb51jKLTgGnk5AvAYlIsgHaE6?w=290&h=192&c=7&r=0&o=5&dpr=1.3&pid=1.7" onclick="openFullImg(this.src)">
+            <img src="https://th.bing.com/th?id=OSK.d45fb09d93249e20f77943a06356a24c&w=80&h=80&c=7&o=6&dpr=1.3&pid=SANGAM" onclick="openFullImg(this.src)">
+            <img src="https://j9e9i9g5.rocketcdn.me/wp-content/uploads/2020/10/cutest-animals-in-the-world.jpg" onclick="openFullImg(this.src)">
+            <img src="http://ts1.mm.bing.net/th?id=OIP.7p_ukz_gPWXU2UJEzUlitAHaGY&pid=15.1" onclick="openFullImg(this.src)">
+        </div>
+         
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";    
+        }
+    </script>
+
+    </body>
+</html>
